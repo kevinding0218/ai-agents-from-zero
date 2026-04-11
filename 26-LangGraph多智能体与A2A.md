@@ -242,11 +242,11 @@ Supervisor 模式可以先理解成：**一个主管 Agent 负责判断当前该
 - 子 Agent 是否专注自己的狭窄领域
 - 用户是否主要和主管交互
 
-<img src="images/26/26-2-1-1.gif" alt="Supervisor 架构：主管协调多个子 Agent" style="width:50%;" />
+![Supervisor 架构：主管协调多个子 Agent](images/26/26-2-1-1.gif)
 
 这个模式特别适合：企业助手、旅行预订、客服分流、多部门协作场景。
 
-<img src="images/26/26-2-1-2.gif" alt="Supervisor 执行流程示意" style="width:50%;" />
+![Supervisor 执行流程示意](images/26/26-2-1-2.gif)
 
 ### 2.3 Supervisor 和 Subagents 关系
 
