@@ -91,7 +91,7 @@ async def run_chat_loop(config_path: str | Path | None = None) -> None:
 
     # 语言模型（DeepSeek，与截图一致；可改为其他 OpenAI 兼容接口）
     llm = ChatOpenAI(
-        model="deepseek-chat",
+        model="deepseek-v4-flash",
         api_key=os.getenv("deepseek-api"),
         base_url="https://api.deepseek.com",
     )

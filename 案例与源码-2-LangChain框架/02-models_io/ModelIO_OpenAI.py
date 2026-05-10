@@ -29,7 +29,7 @@ client = OpenAI(
 # 注意：这里的 messages 是 OpenAI SDK 语义下的消息列表，和 LangChain 中常见的“消息列表”长得相似，
 # 但最终返回值结构并不一样。
 response = client.chat.completions.create(
-    model="deepseek-chat",
+    model="deepseek-v4-flash",
     messages=[
         {"role": "system", "content": "You are a helpful assistant"},
         {"role": "user", "content": "Hello，你是谁？"},

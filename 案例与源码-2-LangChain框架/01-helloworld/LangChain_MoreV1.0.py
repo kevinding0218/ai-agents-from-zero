@@ -35,10 +35,9 @@ print(llm_qwen.invoke("你是谁").content)
 print("*" * 70)
 
 # ========== 3. 实例化模型二：DeepSeek 官方 ==========
-# model_provider 说明：deepseek-chat + base_url 为 DeepSeek 时，部分版本可自动推断 provider；
 # 显式写 model_provider="deepseek" 更稳妥。若接其他厂商（如 OpenAI 兼容），则需写 model_provider="openai"。
 llm_deepseek = init_chat_model(
-    model="deepseek-chat",  # 对应 DeepSeek 非思考模式，思考模式常用 deepseek-reasoner
+    model="deepseek-v4-flash",  # 复杂推理或高质量生成可改用 deepseek-v4-pro
     model_provider="deepseek",  # 这里走的是 DeepSeek 官方 provider，而不是阿里百炼兼容端点
     api_key=os.getenv("deepseek-api"),  # .env 中配置 DeepSeek API Key
     base_url="https://api.deepseek.com",

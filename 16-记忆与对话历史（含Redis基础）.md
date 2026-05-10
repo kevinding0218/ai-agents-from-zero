@@ -186,6 +186,8 @@
 - **先学 `RunnableWithMessageHistory + BaseChatMessageHistory`**
 - 同时让你知道官方更大主线已逐步转向 LangGraph persistence
 
+> **版本说明：** 本章继续使用 `RunnableWithMessageHistory`，是为了把 LCEL 链里的“历史消息如何读写和注入”讲清楚。生产级 Agent 或复杂多轮状态管理，建议再对照 LangGraph 的 checkpointer、thread 和 persistence 机制来设计。
+
 这样后面你切到更复杂的 Agent / LangGraph，就不会断层。
 
 **补充：** 历史消息会占用模型上下文窗口；轮数过多时需要在工程上做截断、摘要或只保留最近 \(k\) 轮，否则可能触达 token 上限或成本上升——具体策略与产品需求相关，本章先建立“注入历史”的主线即可。

@@ -21,7 +21,7 @@ load_dotenv(encoding="utf-8")
 # ========== 2. 初始化 DeepSeek 聊天模型 ==========
 # 这里显式写出 temperature、timeout、max_retries，是为了让你看到原生 provider 也支持常见模型参数。
 model = ChatDeepSeek(
-    model="deepseek-chat",
+    model="deepseek-v4-flash",
     temperature=0,
     max_tokens=None,
     timeout=None,

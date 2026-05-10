@@ -23,7 +23,7 @@ load_dotenv(encoding="utf-8")
 # 通常取 0~2，源于 OpenAI API 约定；具体上下界以所用 API 文档为准。
 # 超过 2（如 2.1）可能被部分接口拒绝或截断，且与 2.0 效果差异不大，建议不超过 2。
 model = init_chat_model(
-    model="deepseek-chat",
+    model="deepseek-v4-flash",
     model_provider="openai",
     api_key=os.getenv("deepseek-api"),
     base_url="https://api.deepseek.com",

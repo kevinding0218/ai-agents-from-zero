@@ -332,12 +332,14 @@ https://dashscope.aliyuncs.com/compatible-mode/v1
 
 #### 5.2.2 获得模型名
 
-当前课程里最常见的两个模型名是：
+当前 DeepSeek API 官方主推的模型名包括：
 
-- `deepseek-chat`：普通对话 / 非思考模式
-- `deepseek-reasoner`：思考 / 推理模式
+- `deepseek-v4-flash`：适合作为默认示例模型，兼顾速度与成本。
+- `deepseek-v4-pro`：适合更复杂的推理、代码和高质量生成场景。
 
-![DeepSeek 文档或控制台：模型列表与调用名示意（如 deepseek-chat、deepseek-reasoner）](images/10/10-5-2-2.jpeg)
+> 说明：DeepSeek 官方文档已将 `deepseek-chat` 和 `deepseek-reasoner` 标注为兼容别名，它们会在 2026-07-24 弃用。新写代码时，优先以官方当前模型列表里的 `deepseek-v4-flash`、`deepseek-v4-pro` 等模型名为准。
+
+![DeepSeek 文档或控制台：模型列表与调用名示意（如 deepseek-v4-flash、deepseek-v4-pro）](images/10/10-5-2-2.jpeg)
 
 #### 5.2.3 获得 Base URL
 
@@ -348,11 +350,6 @@ https://api.deepseek.com
 ```
 
 具体仍应以 DeepSeek 官方文档为准。
-
-**补充说明：**
-
-- `deepseek-chat` 更适合普通聊天、一般生成任务
-- `deepseek-reasoner` 更适合需要显式推理能力的场景
 
 ![DeepSeek：普通对话模式与推理（reasoner）模式的适用场景说明示意](images/10/10-5-2-3.jpeg)
 
