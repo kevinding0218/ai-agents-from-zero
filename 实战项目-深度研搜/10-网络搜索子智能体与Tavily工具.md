@@ -88,11 +88,7 @@
 
 ## 2、完善 prompts.yml 中的网络助手配置
 
-项目对应文件：
-
-```text
-deepsearch-agents/prompt/prompts.yml
-```
+项目对应文件：`deepsearch-agents/app/prompt/prompts.yml`
 
 在第 9 章，我们已经把提示词放进 YAML 文件统一管理。现在先补全网络搜索助手的配置。
 
@@ -149,7 +145,7 @@ Tavily 是面向大模型使用的搜索 API，它返回的结果通常已经整
 
 ## 4、实现并验证 internet_search 工具
 
-项目对应文件：`deepsearch-agents/tools/tavily_tool.py`
+项目对应文件：`deepsearch-agents/app/tools/tavily_tool.py`
 
 完整工具可以先按五段理解：
 
@@ -169,7 +165,7 @@ from dotenv import load_dotenv
 from langchain_core.tools import tool
 from tavily import TavilyClient
 
-from api.monitor import monitor
+from app.api.monitor import monitor
 
 load_dotenv()
 
@@ -278,7 +274,7 @@ if __name__ == "__main__":
 
 ### 4.3 实际运行输出怎么读
 
-在项目根目录运行：`uv run python -m tools.tavily_tool`
+在项目根目录运行：`uv run python -m app.tools.tavily_tool`
 
 一次真实输出会先看到工具监控事件：
 
@@ -447,7 +443,7 @@ Agent 调用 internet_search
 
 工具写完以后，就可以把它和提示词配置组装成子智能体。
 
-项目对应文件：`deepsearch-agents/agent/subagents/network_search_agent.py`
+项目对应文件：`deepsearch-agents/app/agent/subagents/network_search_agent.py`
 
 这个文件只做一件事：把 YAML 里的网络助手配置和 `internet_search` 工具组装成 DeepAgents 认识的字典。
 
@@ -455,13 +451,13 @@ Agent 调用 internet_search
 """
 网络搜索子智能体配置模块
 
-将 prompt/prompts.yml 中的 tavily 配置与 internet_search 工具组装成
+将 app/prompt/prompts.yml 中的 tavily 配置与 internet_search 工具组装成
 DeepAgents 可识别的字典式子智能体。主智能体后续会根据 description
 决定是否把公开网络信息查询任务分派给它。
 """
 
-from agent.prompts import sub_agents_content
-from tools.tavily_tool import internet_search
+from app.agent.prompts import sub_agents_content
+from app.tools.tavily_tool import internet_search
 
 
 # 字典式子智能体的核心字段来自 YAML，便于后续只改配置就能调整路由描述和行为约束
@@ -474,14 +470,14 @@ network_search_agent = {
 }
 ```
 
-这里采用的是 DeepAgents 最常见的字典式子智能体写法。注意，`network_search_agent.py` 并没有把提示词硬编码在 Python 文件里，而是从 `agent.prompts` 中读取 `sub_agents_content`。在 `agent/prompts.py` 里，`sub_agents_content` 来自 `prompt_yaml_content["sub_agents"]`，也就是前面配置的 `prompts.yml`。这样后续只想调整助手描述或检索策略时，优先改 YAML 即可，不需要反复改 Python 代码。
+这里采用的是 DeepAgents 最常见的字典式子智能体写法。注意，`network_search_agent.py` 并没有把提示词硬编码在 Python 文件里，而是从 `app.agent.prompts` 中读取 `sub_agents_content`。在 `app/agent/prompts.py` 里，`sub_agents_content` 来自 `prompt_yaml_content["sub_agents"]`，也就是前面配置的 `prompts.yml`。这样后续只想调整助手描述或检索策略时，优先改 YAML 即可，不需要反复改 Python 代码。
 
-| 字段            | 来源                   | 作用                         |
-| --------------- | ---------------------- | ---------------------------- |
-| `name`          | `prompts.yml`          | 子智能体名称                 |
-| `description`   | `prompts.yml`          | 给主智能体判断何时调用       |
-| `system_prompt` | `prompts.yml`          | 给网络搜索助手自己的行为约束 |
-| `tools`         | `tools/tavily_tool.py` | 子智能体可以调用的真实工具   |
+| 字段            | 来源                       | 作用                         |
+| --------------- | -------------------------- | ---------------------------- |
+| `name`          | `prompts.yml`              | 子智能体名称                 |
+| `description`   | `prompts.yml`              | 给主智能体判断何时调用       |
+| `system_prompt` | `prompts.yml`              | 给网络搜索助手自己的行为约束 |
+| `tools`         | `app/tools/tavily_tool.py` | 子智能体可以调用的真实工具   |
 
 ---
 
