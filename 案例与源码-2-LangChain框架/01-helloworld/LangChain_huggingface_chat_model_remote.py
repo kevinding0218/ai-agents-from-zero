@@ -11,6 +11,9 @@
     写法 A：init_chat_model 统一入口（与 LangChainV1.0.py 风格一致，需额外传 backend 参数）
     写法 B：HuggingFaceEndpoint + ChatHuggingFace 显式写法（更直观，层次更清晰）
 - 模型 ID 格式为 "作者/模型名"，与 HuggingFace 网页路径一致
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/01-helloworld/LangChain_huggingfaceV1.0.py
 """
 
 # ========== 1. 导入依赖 ==========
@@ -30,9 +33,40 @@ model = init_chat_model(
     model_provider="huggingface",
     backend="endpoint",                                 # 关键：指定远程 API 模式
     huggingfacehub_api_token=os.getenv("HF_TOKEN"),    # HuggingFace token 参数名
+    max_new_tokens=1024,                                # 模型最多生成的 token 数，默认 512，调大避免回答被截断
 )
 
-print(model.invoke("Who are you?").content)
+# ========== 3. 交互式对话循环 ==========
+# input() 读取控制台输入，程序会一直等待，直到用户输入 "quit" 或 "exit"
+# response.usage_metadata 包含本次调用消耗的 token 数（输入 + 输出）
+# 远程调用（endpoint）：token 由 HuggingFace 服务器计算并返回
+# 本地运行（pipeline）：token 由本机 tokenizer 统计，不产生任何费用
+
+print("模型已就绪，输入问题开始对话（输入 quit 或 exit 退出）")
+print("-" * 50)
+
+while True:
+    user_input = input("你：").strip()
+
+    if user_input.lower() in ("quit", "exit"):
+        print("再见！")
+        break
+
+    if not user_input:       # 防止空输入直接回车
+        continue
+
+    response = model.invoke(user_input)
+
+    print(f"模型回复正文：{response.content}")
+    print(f"厂商返回的原始元数据：{response.response_metadata}")
+    print(f"LangChain 统一整理后的用量信息：{response.usage_metadata}")
+    print(f"工具调用信息：{response.tool_calls}")
+    print(f"厂商扩展字段：{response.additional_kwargs}")
+
+    # usage_metadata 结构：{'input_tokens': N, 'output_tokens': N, 'total_tokens': N}
+    usage = response.usage_metadata
+    print(f"[token 消耗] 输入: {usage['input_tokens']}  输出: {usage['output_tokens']}  合计: {usage['total_tokens']}")
+    print("-" * 50)
 
 
 # ========== 写法 B：HuggingFaceEndpoint + ChatHuggingFace 显式写法 ==========
