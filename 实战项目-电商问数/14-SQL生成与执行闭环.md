@@ -38,7 +38,7 @@ correct_sql   # 校正 SQL
 run_sql       # 执行 SQL
 ```
 
-![基于 LangGraph 的问数智能体全流程：从自然语言问题进入召回、过滤、SQL 生成、校验、校正和执行](images/2/2-3-1-1.jpg)
+![基于 LangGraph 的问数智能体全流程：从自然语言问题进入召回、过滤、SQL 生成、校验、校正和执行](../images/2/2-3-1-1.jpg)
 
 ---
 
@@ -117,7 +117,7 @@ db_info:
 
 ## 3、生成 SQL：generate_sql
 
-![问数智能体「生成 SQL」：基于表结构、指标、日期和数据库环境，将自然语言问题转成 SQL](images/2/2-3-6-1.png)
+![问数智能体「生成 SQL」：基于表结构、指标、日期和数据库环境，将自然语言问题转成 SQL](../images/2/2-3-6-1.png)
 
 `generate_sql` 的职责很单纯：**生成一条候选 SQL，并写入 `state["sql"]`。**
 

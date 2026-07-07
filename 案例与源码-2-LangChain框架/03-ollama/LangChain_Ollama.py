@@ -32,6 +32,8 @@ model = ChatOllama(
 # 适合：单轮问答、快速测试
 #
 # response = model.invoke("什么是LangChain，100字以内回答")
+# Why do you need to pass history manually?
+# invoke() is stateless — each call is independent and the model remembers nothing between calls. If you want it to remember previous turns, you have to manually include the past messages in the list yourself.
 
 # ── 写法 B：传 HumanMessage 列表（推荐写法）──────────────────────────
 # HumanMessage 是 LangChain 的消息对象，明确表示"这是用户说的话"。
