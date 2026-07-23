@@ -14,6 +14,9 @@
   当前官方主线理解，初学者还要知道 stdio 和 HTTP/Streamable HTTP 才是更需要重点理解的传输方式。
 - 正确写法：mcp = FastMCP("服务名")  →  mcp.run(transport="sse", host="127.0.0.1", port=8000)
 - 错误写法：mcp = FastMCP("服务名", host="127.0.0.1", port=8000)  # FastMCP 构造函数不支持 host/port
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/11-mcp/McpServerWeatherByFastMCP.py
 """
 
 from typing import Any

@@ -14,6 +14,9 @@
   但更适合初学者先看懂 A2A 的基本思想。
 - 规范要点：子 Agent 单一职责、统一 `invoke({"input": "..."})` 接口；工具用
   `@tool(名称, description=...)` 并写清参数说明，便于模型正确传参。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/12-agent/Agent2Agent.py
 """
 
 import os

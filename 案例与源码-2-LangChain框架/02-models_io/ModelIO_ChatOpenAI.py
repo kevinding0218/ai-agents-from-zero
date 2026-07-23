@@ -8,6 +8,9 @@
 - 通过 `ChatOpenAI + base_url` 可接入通义 / 阿里百炼等兼容接口，并继续与 Prompt、Parser、Chain、Agent、Memory 等组件配合。
 - 与 `ModelIO_OpenAI.py` 的核心区别在于：这里返回的是 LangChain 语义下的 `AIMessage`，通常先用 `response.content` 取正文。
 - 依赖 `langchain-openai`，运行前在 `.env` 中配置 API Key。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/02-models_io/ModelIO_ChatOpenAI.py
 """
 
 # ========== 1. 导入与环境 ==========

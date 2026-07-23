@@ -266,7 +266,7 @@ from langchain.agents import create_agent
 
 【案例源码】`案例与源码-2-LangChain框架/12-agent/AgentSmartSelectV0.3.py`
 
-[AgentSmartSelectV0.3.py](案例与源码-2-LangChain框架/12-agent/AgentSmartSelectV0.3.py ":include :type=code")
+[AgentSmartSelectV0.3.py](案例与源码-2-LangChain框架/12-agent/AgentSmartSelectV0.3.py)
 
 这个案例适合用来理解 classic Agent 的完整链路，因为它把这些部分都摆出来了：
 
@@ -398,7 +398,7 @@ Agent 的问题，往往不是“有没有报错”这么简单，而是：
 
 【案例源码】`案例与源码-2-LangChain框架/12-agent/AgentSmartSelectV1.0.py`
 
-[AgentSmartSelectV1.0.py](案例与源码-2-LangChain框架/12-agent/AgentSmartSelectV1.0.py ":include :type=code")
+[AgentSmartSelectV1.0.py](案例与源码-2-LangChain框架/12-agent/AgentSmartSelectV1.0.py)
 
 这个案例和 V0.3 做的是同一类业务：都是围绕“北京和上海谁更热”来调用天气工具。
 
@@ -473,7 +473,7 @@ Agent 的问题，往往不是“有没有报错”这么简单，而是：
 
 【案例源码】`案例与源码-2-LangChain框架/12-agent/AgentReact.py`
 
-[AgentReact.py](案例与源码-2-LangChain框架/12-agent/AgentReact.py ":include :type=code")
+[AgentReact.py](案例与源码-2-LangChain框架/12-agent/AgentReact.py)
 
 这个案例可以用来建立“**Agent 会自己连续做多步决策**”的直觉。
 
@@ -502,7 +502,7 @@ Agent 的问题，往往不是“有没有报错”这么简单，而是：
 
 【案例源码】`案例与源码-2-LangChain框架/12-agent/Agent2Agent.py`
 
-[Agent2Agent.py](案例与源码-2-LangChain框架/12-agent/Agent2Agent.py ":include :type=code")
+[Agent2Agent.py](案例与源码-2-LangChain框架/12-agent/Agent2Agent.py)
 
 这个案例对应的是广义上的多智能体协作，也就是 **A2A（Agent-to-Agent）**。这里的 A2A 指“Agent 之间分工协作”的思想，不特指某一个外部通信协议。
 
@@ -533,7 +533,7 @@ Agent 的问题，往往不是“有没有报错”这么简单，而是：
 
 【案例源码】`案例与源码-2-LangChain框架/11-mcp/McpClientAgent.py`
 
-[McpClientAgent.py](案例与源码-2-LangChain框架/11-mcp/McpClientAgent.py ":include :type=code")
+[McpClientAgent.py](案例与源码-2-LangChain框架/11-mcp/McpClientAgent.py)
 
 这一节把第 20 章 MCP 和本章 Agent 接上了。前面几个案例里的工具，基本都是当前进程里直接写的 `@tool`。而这个案例演示的是另一件更接近真实项目的事：**工具不一定定义在本地代码里，也可以来自外部 MCP 服务。**
 

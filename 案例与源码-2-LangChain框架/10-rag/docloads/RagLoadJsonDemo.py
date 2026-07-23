@@ -8,6 +8,9 @@
 - `jq_schema="."` 表示把整份 JSON 当成一条内容读取，适合演示；真实 RAG 中通常会抽取更具体的字段或列表项，避免“一个 JSON 文件只变成一个很大的 Document”。
 - 依赖 jq：pip install jq；若 JSON 较复杂可先查看文档确定 jq_schema 写法。
 - 返回的每个 Document 对应一条被提取出的内容，便于后续向量化与检索。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/10-rag/docloads/RagLoadJsonDemo.py
 """
 
 # pip install jq langchain_community

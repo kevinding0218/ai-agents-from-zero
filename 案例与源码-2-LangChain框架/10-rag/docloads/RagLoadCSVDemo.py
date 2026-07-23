@@ -8,6 +8,9 @@
 - 不指定列时：整行（所有列）会拼成一条字符串作为 page_content，metadata 通常只有 source，检索时整行一起被向量化。
 - 指定 `content_columns` + `metadata_columns` 时：只有指定列作为正文（page_content），其余列进 metadata；这正好对应了 RAG 里 `Document.page_content` 与 `Document.metadata` 的分工。
 - 检索时只对正文向量化，metadata 更适合拿来做过滤、来源展示和结果解释，因此结构化表格数据尤其适合这样拆分。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/10-rag/docloads/RagLoadCSVDemo.py
 """
 
 # pip install langchain_community

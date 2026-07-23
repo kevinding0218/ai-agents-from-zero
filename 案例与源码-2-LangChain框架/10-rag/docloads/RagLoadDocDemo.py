@@ -8,6 +8,9 @@
 - Word 文档虽然本质上是机器可读的结构化文件，但现实里标题样式和段落样式常常不够规范，所以“视觉上像标题”不一定能被稳定识别。
 - 为何要装 unstructured？UnstructuredWordDocumentLoader 内部会按需 import unstructured 解析 .docx，langchain-community 不自动安装，需单独 pip install unstructured（若只加载 docx 可装 unstructured[docx]）。
 - `single` 更适合快速看整篇内容；`elements` 更适合理解“按结构拆成多个 Document”的效果。加载后得到 `List[Document]`，与 TXT/PDF 等一致，可统一走「分割 → 向量化 → 入库」流程。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/10-rag/docloads/RagLoadDocDemo.py
 """
 
 # pip install langchain_community unstructured[docx] python-docx

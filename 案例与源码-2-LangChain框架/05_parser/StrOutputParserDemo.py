@@ -13,6 +13,9 @@
   - 适合：只关心「模型说了什么话」、不需要拆成字段的场景。
 
 三、典型流程：构造 Prompt → model.invoke(prompt) 得到 result → parser.invoke(result) 得到 str。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/05_parser/StrOutputParserDemo.py
 """
 
 from langchain_core.output_parsers import StrOutputParser

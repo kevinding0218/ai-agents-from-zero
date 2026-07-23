@@ -19,6 +19,9 @@
   在服务里用 MCP SDK 暴露工具；本进程作为「客户端」通过 mcp.json + MultiServerMCPClient.get_tools() 拿到工具列表再交给 Agent。
 - 因此有两种用法二选一：① 本地 @tool，直接传给 create_agent（本案例）；② 用 MCP 服务 + McpClientAgent 的方式
   连接并 get_tools()（见 11-mcp/McpClientAgent.py）。不能在同一文件里把 @tool 简单替换成 @mcp.tool()。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/12-agent/AgentReact.py
 """
 
 import os

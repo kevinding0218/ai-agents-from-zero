@@ -93,7 +93,7 @@ stream_mode=["updates", "custom"]
 
 【案例源码】`案例与源码-3-LangGraph框架/07-senior/streaming/StreamGraphState.py`
 
-[StreamGraphState.py](案例与源码-3-LangGraph框架/07-senior/streaming/StreamGraphState.py ":include :type=code")
+[StreamGraphState.py](案例与源码-3-LangGraph框架/07-senior/streaming/StreamGraphState.py)
 
 ### 1.7 案例：多模式流与 debug
 
@@ -104,7 +104,7 @@ stream_mode=["updates", "custom"]
 
 【案例源码】`案例与源码-3-LangGraph框架/07-senior/streaming/StreamMultipleModes.py`
 
-[StreamMultipleModes.py](案例与源码-3-LangGraph框架/07-senior/streaming/StreamMultipleModes.py ":include :type=code")
+[StreamMultipleModes.py](案例与源码-3-LangGraph框架/07-senior/streaming/StreamMultipleModes.py)
 
 ### 1.8 案例：LLM 逐 token 流式输出（messages）
 
@@ -114,7 +114,7 @@ stream_mode=["updates", "custom"]
 
 【案例源码】`案例与源码-3-LangGraph框架/07-senior/streaming/StreamLLMTokens.py`
 
-[StreamLLMTokens.py](案例与源码-3-LangGraph框架/07-senior/streaming/StreamLLMTokens.py ":include :type=code")
+[StreamLLMTokens.py](案例与源码-3-LangGraph框架/07-senior/streaming/StreamLLMTokens.py)
 
 ### 1.9 案例：自定义数据流（custom）
 
@@ -133,11 +133,11 @@ stream_mode=["updates", "custom"]
 
 【案例源码】`案例与源码-3-LangGraph框架/07-senior/streaming/StreamCustomDataSimple.py`
 
-[StreamCustomDataSimple.py](案例与源码-3-LangGraph框架/07-senior/streaming/StreamCustomDataSimple.py ":include :type=code")
+[StreamCustomDataSimple.py](案例与源码-3-LangGraph框架/07-senior/streaming/StreamCustomDataSimple.py)
 
 【案例源码】`案例与源码-3-LangGraph框架/07-senior/streaming/StreamCustomData.py`
 
-[StreamCustomData.py](案例与源码-3-LangGraph框架/07-senior/streaming/StreamCustomData.py ":include :type=code")
+[StreamCustomData.py](案例与源码-3-LangGraph框架/07-senior/streaming/StreamCustomData.py)
 
 ### 1.10 小结：什么时候该用哪种流
 
@@ -290,7 +290,7 @@ graph.invoke(None, config={"configurable": {"thread_id": "user-001"}})
 
 【案例源码】`案例与源码-3-LangGraph框架/07-senior/state_persistence/MemoryPersistence.py`
 
-[MemoryPersistence.py](案例与源码-3-LangGraph框架/07-senior/state_persistence/MemoryPersistence.py ":include :type=code")
+[MemoryPersistence.py](案例与源码-3-LangGraph框架/07-senior/state_persistence/MemoryPersistence.py)
 
 ### 2.10 案例：SQLite 检查点（SqlitePersistence）
 
@@ -300,7 +300,7 @@ graph.invoke(None, config={"configurable": {"thread_id": "user-001"}})
 
 【案例源码】`案例与源码-3-LangGraph框架/07-senior/state_persistence/SqlitePersistence.py`
 
-[SqlitePersistence.py](案例与源码-3-LangGraph框架/07-senior/state_persistence/SqlitePersistence.py ":include :type=code")
+[SqlitePersistence.py](案例与源码-3-LangGraph框架/07-senior/state_persistence/SqlitePersistence.py)
 
 ### 2.11 案例：预构建 Agent 与持久化（AgentPersistence）
 
@@ -313,7 +313,7 @@ graph.invoke(None, config={"configurable": {"thread_id": "user-001"}})
 
 【案例源码】`案例与源码-3-LangGraph框架/07-senior/state_persistence/AgentPersistence.py`
 
-[AgentPersistence.py](案例与源码-3-LangGraph框架/07-senior/state_persistence/AgentPersistence.py ":include :type=code")
+[AgentPersistence.py](案例与源码-3-LangGraph框架/07-senior/state_persistence/AgentPersistence.py)
 
 ---
 
@@ -473,7 +473,7 @@ flowchart LR
 
 【案例源码】`案例与源码-3-LangGraph框架/07-senior/time_travel/TimeTravel.py`
 
-[TimeTravel.py](案例与源码-3-LangGraph框架/07-senior/time_travel/TimeTravel.py ":include :type=code")
+[TimeTravel.py](案例与源码-3-LangGraph框架/07-senior/time_travel/TimeTravel.py)
 
 ---
 
@@ -532,7 +532,7 @@ flowchart LR
 
 【案例源码】`案例与源码-3-LangGraph框架/07-senior/subgraph/SubGraphHello.py`
 
-[SubGraphHello.py](案例与源码-3-LangGraph框架/07-senior/subgraph/SubGraphHello.py ":include :type=code")
+[SubGraphHello.py](案例与源码-3-LangGraph框架/07-senior/subgraph/SubGraphHello.py)
 
 ### 5.5 案例：共享状态字段
 
@@ -546,7 +546,7 @@ flowchart LR
 
 【案例源码】`案例与源码-3-LangGraph框架/07-senior/subgraph/SubGraphSimple.py`
 
-[SubGraphSimple.py](案例与源码-3-LangGraph框架/07-senior/subgraph/SubGraphSimple.py ":include :type=code")
+[SubGraphSimple.py](案例与源码-3-LangGraph框架/07-senior/subgraph/SubGraphSimple.py)
 
 ### 5.6 案例：代理节点与状态转换（SubGraphPro）
 
@@ -565,7 +565,7 @@ flowchart LR
 
 【案例源码】`案例与源码-3-LangGraph框架/07-senior/subgraph/SubGraphPro.py`
 
-[SubGraphPro.py](案例与源码-3-LangGraph框架/07-senior/subgraph/SubGraphPro.py ":include :type=code")
+[SubGraphPro.py](案例与源码-3-LangGraph框架/07-senior/subgraph/SubGraphPro.py)
 
 ### 5.7 子图与持久化
 

@@ -7,6 +7,9 @@
 - Markdown 是一种典型的半结构化文本：天然带有标题、列表、段落等结构，因此很适合做知识库文档。
 - Markdown 可用 UnstructuredMarkdownLoader；mode 为 elements 时会按标题、段落等元素拆成多个 Document，便于保留结构。
 - 适合技术文档、README 等；后续分割时也可选用 MarkdownHeaderTextSplitter 按标题切分（见 2.3 文本分割器表）。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/10-rag/docloads/RagLoadMarkdownDemo.py
 """
 
 # pip install langchain_community unstructured[md]

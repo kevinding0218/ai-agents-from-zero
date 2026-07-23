@@ -7,6 +7,9 @@
 - `@tool` 会把普通 Python 函数包装成 LangChain Tool，使它具备 `name`、`description`、`args` 等元信息，便于后续交给模型或 Agent 使用。
 - 本例中的 `tool.invoke(...)` 是“程序侧直接执行工具”的写法，用来先理解 Tool 本身；它不等同于“模型已经自动发起了工具调用”。
 - 函数的 docstring 默认会成为工具的 `description`，因此建议至少写清“做什么”；参数更多、要求更严格时，再结合 `args_schema` 补充说明。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/08-tools/Tool_AddNumberTool.py
 """
 
 from langchain_core.tools import tool

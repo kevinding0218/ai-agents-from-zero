@@ -12,6 +12,9 @@
   教程里还补充了 `checkpointer / middleware` 这两个更偏工程化的扩展点，但这里不作为主线展开。
 - 调用方式：当前示例用 `agent.invoke(...)` 直接看最终结果；如果真实项目里想看中间进展，通常还会配合
   `stream()`，如果想做短期记忆，则会进一步引入 `checkpointer + thread_id`。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/12-agent/AgentSmartSelectV1.0.py
 """
 
 import os

@@ -10,6 +10,9 @@
 - 若要单独取出向量数组，可从 output.embeddings[0].embedding 获取；向量长度由当前模型决定。
 
 模型文档链接：https://bailian.console.aliyun.com/cn-beijing/?productCode=p_efm&tab=doc#/doc/?type=model&url=2842587
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/09-embedding/Text2Embedding_DashScopeHello.py
 """
 
 import os

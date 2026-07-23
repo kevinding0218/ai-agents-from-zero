@@ -13,6 +13,9 @@
   - 调用 .invoke(messages) 时，模型会被引导输出符合该结构的 JSON，并自动解析成 Python 的 dict（或对应类型），无需再手写 Parser。
 
 三、本案例：用 typing.TypedDict 定义 Animal（动物名 + emoji）、AnimalList（动物列表）；用 Annotated 给字段加描述，便于模型理解各字段含义；最后用 llm.with_structured_output(AnimalList) 一次得到结构化结果。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/05_parser/StructuredOutput_TypedDict.py
 """
 
 import os

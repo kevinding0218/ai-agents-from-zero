@@ -9,6 +9,9 @@
   - 本文件：用 **Pydantic** 的 Field(ge=0, le=150) 放在 Annotated 里，即 Annotated[int, Field(ge=0, le=150, ...)]，Pydantic 会在**运行时**校验数值是否在 0–150，超出则抛 ValidationError。
 
 二、适用场景：需要「强类型 + 取值范围校验」时，用 Pydantic 模型 + Field 约束；LangChain 的结构化输出也可用这类模型做解析与校验。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/05_parser/AnnotatedPydantic.py
 """
 
 from typing import Annotated

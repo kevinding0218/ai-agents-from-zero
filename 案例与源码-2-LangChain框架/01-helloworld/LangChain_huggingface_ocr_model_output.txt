@@ -1,0 +1,32 @@
+============================================================
+示例 A：pipeline() 图像分类
+============================================================
+Loading weights:   0%|          | 0/200 [00:00<?, ?it/s]Loading weights: 100%|██████████| 200/200 [00:00<00:00, 9710.61it/s]
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+分类结果（置信度从高到低）：
+  revolver, six-gun, six-shooter  0.0438
+  oboe, hautboy, hautbois         0.0340
+  bassoon                         0.0268
+
+============================================================
+示例 B：AutoProcessor + AutoModel 多行 OCR
+============================================================
+正在加载 GOT-OCR2 模型（stepfun-ai/GOT-OCR-2.0-hf，约 1 GB）...
+Loading weights:   0%|          | 0/471 [00:00<?, ?it/s]Loading weights:   0%|          | 1/471 [00:01<12:44,  1.63s/it]Loading weights:  74%|███████▍  | 350/471 [00:01<00:00, 279.12it/s]Loading weights: 100%|██████████| 471/471 [00:01<00:00, 239.45it/s]
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+识别图中所有文字（多行）...
+
+【OCR 提取结果（多行）】
+ Authenticity Guarantee
+ Charizard 1999 Base set unlimited Pokémon #4
+PSA 9 Mint
+ 2,852.25
+ 147,83/month for 24 months at 21.9% APR with Klarna
+18+, TC apply, Credit subject to status.
+ 147,83/month for 24 months at 21.9% APR with Klarna
+18+, TC apply, Credit subject to status.
+ 147,83/month for 24 months at 21.9% APR with Klarna
+18+, TC apply, Credit subject to status.
+ 147,83/month for 24 months at 21.9% APR with Klarna
+18+, TC apply, Credit subject to status.
+�

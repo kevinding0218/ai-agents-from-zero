@@ -6,6 +6,9 @@
 知识点速览：
 - Annotated[类型, "描述"] 中的描述只是元数据，供文档、类型检查或 LangChain 生成提示用；Python 运行时不会按描述做校验，故 age2=188 不会报错。
 - 类型提示在运行时总体是「装饰性」的；若需运行时范围校验，要用 Pydantic 的 Field（见 AnnotatedPydantic.py）。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/05_parser/AnnotatedTypedDict.py
 """
 
 from typing import Annotated, TypedDict

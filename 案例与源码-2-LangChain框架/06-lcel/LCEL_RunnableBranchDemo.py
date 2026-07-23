@@ -7,6 +7,9 @@
 - `RunnableBranch` 解决的是“同一个输入，不一定走同一条链”的问题，本质上是 LCEL 里的路由层。
 - 传入若干 `(条件, Runnable)` 对和一个默认分支后，执行时会按顺序判断条件，命中的第一条分支会被执行；最后一个未成对的 Runnable 通常就是默认分支。
 - 每个分支内部仍然可以是 `prompt | model | parser` 这样的顺序链，所以分支链可以理解为“外层路由 + 内层子链”。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/06-lcel/LCEL_RunnableBranchDemo.py
 """
 
 import os

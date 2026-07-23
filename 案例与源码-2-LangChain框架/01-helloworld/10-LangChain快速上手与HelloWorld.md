@@ -164,7 +164,7 @@ pip install langchain-deepseek -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 【案例源码】环境检查脚本：`案例与源码-2-LangChain框架/01-helloworld/GetEnvInfo.py`
 
-[GetEnvInfo.py](案例与源码-2-LangChain框架/01-helloworld/GetEnvInfo.py ":include :type=code")
+[GetEnvInfo.py](GetEnvInfo.py)
 
 这个脚本会输出：
 
@@ -256,7 +256,7 @@ https://dashscope.aliyuncs.com/compatible-mode/v1
 
 【案例源码】`案例与源码-2-LangChain框架/01-helloworld/LangChainV0.3.py`
 
-[LangChainV0.3.py](案例与源码-2-LangChain框架/01-helloworld/LangChainV0.3.py ":include :type=code")
+[LangChainV0.3.py](LangChainV0.3.py)
 
 这个案例最有价值的地方有三点：
 
@@ -270,7 +270,7 @@ https://dashscope.aliyuncs.com/compatible-mode/v1
 
 【案例源码】`案例与源码-2-LangChain框架/01-helloworld/LangChainV1.0.py`
 
-[LangChainV1.0.py](案例与源码-2-LangChain框架/01-helloworld/LangChainV1.0.py ":include :type=code")
+[LangChainV1.0.py](LangChainV1.0.py)
 
 这个案例是当前更推荐你重点掌握的写法。它最大的意义在于：通过 **`init_chat_model` 统一入口**，你不再需要为每个模型厂商记一套不同的初始化方式，而是先记住同一套调用骨架，再通过参数切换不同模型和 provider。
 
@@ -365,7 +365,7 @@ https://api.deepseek.com
 
 【案例源码】`案例与源码-2-LangChain框架/01-helloworld/LangChain_MoreV1.0.py`
 
-[LangChain_MoreV1.0.py](案例与源码-2-LangChain框架/01-helloworld/LangChain_MoreV1.0.py ":include :type=code")
+[LangChain_MoreV1.0.py](LangChain_MoreV1.0.py)
 
 这个案例有三个特别重要的知识点：
 
@@ -432,7 +432,7 @@ for chunk in model.stream("请介绍一下 LangGraph"):
 
 【案例源码】`案例与源码-2-LangChain框架/01-helloworld/StandardDesc.py`
 
-[StandardDesc.py](案例与源码-2-LangChain框架/01-helloworld/StandardDesc.py ":include :type=code")
+[StandardDesc.py](StandardDesc.py)
 
 这个案例比前面的 HelloWorld 更接近真实项目，主要体现在：
 

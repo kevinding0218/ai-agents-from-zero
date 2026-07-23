@@ -8,6 +8,9 @@
 - 使用 `ChatOllama` 连接本机模型，无需云端 API Key；前提是本机已安装并启动 Ollama，且已经拉取过目标模型。
 - `base_url` 指向本机 Ollama 服务根地址（默认 `http://localhost:11434`），`model` 必须与 `ollama list` 里已存在的标签一致。
 - `invoke()` 返回的仍然是 LangChain 语义下的 `AIMessage`，因此和第 11 章云端模型调用一样，正文通常用 `response.content` 读取。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/03-ollama/LangChain_Ollama.py
 """
 
 from langchain.messages import AIMessage, HumanMessage

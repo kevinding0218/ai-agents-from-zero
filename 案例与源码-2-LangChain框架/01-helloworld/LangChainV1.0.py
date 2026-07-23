@@ -7,6 +7,9 @@
 - 1.0 推荐用 init_chat_model 作为统一入口，通过 model_provider（如 "openai"）指定厂商，同一套写法可切换模型。
 - 接国内平台（阿里百炼、通义等）时需显式写 model_provider="openai"，否则会报错无法推断 provider。
 - 调用三件套：API Key、模型名、Base URL；invoke(问题) 返回消息对象，.content 取正文。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/01-helloworld/LangChainV1.0.py
 """
 
 # ========== 1. 导入依赖 ==========

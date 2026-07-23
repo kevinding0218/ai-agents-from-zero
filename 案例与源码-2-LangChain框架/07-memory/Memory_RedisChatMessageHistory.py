@@ -8,6 +8,9 @@
 - RunnableWithMessageHistory 负责“什么时候读写历史”，RedisChatMessageHistory 负责“历史存到哪里”；两者是配合关系，不是替代关系。
 - 项目依赖更推荐使用 langchain-redis；若本地环境仍只有 langchain-community，本示例会自动回退，便于旧环境继续运行。
 - 默认连接 redis://localhost:6379，可通过环境变量 REDIS_URL 覆盖；如果你用的是 Redis Stack 的宿主机映射端口，可设 REDIS_URL=redis://localhost:26379。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/07-memory/Memory_RedisChatMessageHistory.py
 """
 
 from dotenv import load_dotenv

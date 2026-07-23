@@ -6,6 +6,9 @@
 知识点速览：
 本脚本用于确认当前 Python 环境中 LangChain、langchain_community 的版本与安装路径，
 便于排查「装错版本」「没进虚拟环境」或「解释器不是当前项目那一个」等问题。无需 API Key，可直接运行。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/01-helloworld/GetEnvInfo.py
 """
 
 import langchain  # 核心框架（Chain、Agent、Memory 等）

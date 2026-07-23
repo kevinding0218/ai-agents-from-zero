@@ -10,6 +10,9 @@
 
 二、本案例流程：用 Pydantic 定义 Product（name、category、description），其中 description 用 field_validator 校验长度 ≥ 10 → 用 PydanticOutputParser(pydantic_object=Product) 创建解析器 → 用 get_format_instructions() 得到格式说明并拼进 Prompt → 模型返回后 parser.invoke(result) 得到 Product 对象。
   - 适合：需要强类型、需要在校验失败时明确报错的场景。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/05_parser/StructuredOutput_Pydantic.py
 """
 
 import os
@@ -55,6 +58,8 @@ prompt_template = ChatPromptTemplate.from_messages(
 prompt = prompt_template.format_messages(
     topic="华为Mate X7", format_instructions=format_instructions
 )
+# → [SystemMessage(content='你是一个AI助手...\nThe output should be formatted as a JSON instance...\n{"properties": {"name": ...}}'),
+#    HumanMessage(content='请你输出标题为：华为Mate X7的新闻内容')]
 logger.info(prompt)
 
 model = init_chat_model(
@@ -65,12 +70,17 @@ model = init_chat_model(
 )
 
 result = model.invoke(prompt)
+# → 模型原始输出:
+#   {"name": "华为Mate X7", "category": "智能手机", "description": "华为Mate X7是一款全新折叠屏旗舰手机..."}
 logger.info(f"模型原始输出:\n{result.content}")
 
 # 解析：把 result 转成 Product 实例，若格式或校验不通过会抛错
 response = parser.invoke(result)
+# → 解析后的结构化结果:
+#   name='华为Mate X7' category='智能手机' description='华为Mate X7是一款全新折叠屏旗舰手机...'
 logger.info(f"解析后的结构化结果:\n{response}")
-logger.info(f"结果类型: {type(response)}")  # <class 'Product'>
+# → 结果类型: <class '__main__.Product'>
+logger.info(f"结果类型: {type(response)}")
 
 """
 【输出示例】

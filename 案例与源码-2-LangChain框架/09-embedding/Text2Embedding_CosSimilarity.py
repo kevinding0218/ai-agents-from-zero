@@ -8,6 +8,9 @@
 - 文本转成向量后，可用余弦相似度衡量两段文本的语义是否接近：值通常在 [-1, 1]，越接近 1 一般表示越相似。
 - 公式：cos(theta) = (A·B) / (|A||B|)；在 Python 里常用 np.dot 和 np.linalg.norm 实现。
 - 相似度比较常用于检索排序、文本去重、聚类、推荐等任务。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/09-embedding/Text2Embedding_CosSimilarity.py
 """
 
 import dashscope

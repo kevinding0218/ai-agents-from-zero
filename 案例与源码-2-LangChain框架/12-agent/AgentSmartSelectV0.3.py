@@ -13,6 +13,9 @@
 - `AgentExecutor(verbose=True)` 很适合教学和排查，它相当于一个轻量级的执行日志窗口；新版教程里补充的
   `stream()` / LangSmith 则是更偏 1.x 和工程化的观察手段。
 - 这个文件的核心价值不是“天气查询”，而是帮助你看清 classic Agent 是如何围绕一次问题完成多次工具调用的。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/12-agent/AgentSmartSelectV0.3.py
 """
 
 import json

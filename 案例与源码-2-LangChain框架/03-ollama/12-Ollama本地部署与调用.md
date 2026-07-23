@@ -598,7 +598,7 @@ ChatOllama(
 
 【案例源码】`案例与源码-2-LangChain框架/03-ollama/LangChain_Ollama.py`
 
-[LangChain_Ollama.py](案例与源码-2-LangChain框架/03-ollama/LangChain_Ollama.py ":include :type=code")
+[LangChain_Ollama.py](LangChain_Ollama.py)
 
 这个案例是本章最核心的代码落地点。  
 它对应的是：

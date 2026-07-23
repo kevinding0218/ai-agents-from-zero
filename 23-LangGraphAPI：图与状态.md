@@ -75,7 +75,7 @@
 
 【案例源码】`案例与源码-3-LangGraph框架/02-graph/BuildWholeGraphSummary.py`
 
-[BuildWholeGraphSummary.py](案例与源码-3-LangGraph框架/02-graph/BuildWholeGraphSummary.py ":include :type=code")
+[BuildWholeGraphSummary.py](案例与源码-3-LangGraph框架/02-graph/BuildWholeGraphSummary.py)
 
 ### 1.5 设计 Graph 的几个问题
 
@@ -121,7 +121,7 @@
 
 【案例源码】`案例与源码-3-LangGraph框架/03-state/DefState.py`
 
-[DefState.py](案例与源码-3-LangGraph框架/03-state/DefState.py ":include :type=code")
+[DefState.py](案例与源码-3-LangGraph框架/03-state/DefState.py)
 
 ### 2.3 State Schema 怎么选
 
@@ -185,7 +185,7 @@
 
 【案例源码】`案例与源码-3-LangGraph框架/03-state/schema/StateSchema.py`
 
-[StateSchema.py](案例与源码-3-LangGraph框架/03-state/schema/StateSchema.py ":include :type=code")
+[StateSchema.py](案例与源码-3-LangGraph框架/03-state/schema/StateSchema.py)
 
 学完 `State Schema` 和 `input_schema / output_schema` 之后，State 的“字段长什么样”这一半就比较清楚了。接下来要补上的，就是另一半：**字段更新时到底怎么合并。** 这正是 Reducer 负责的事。
 
@@ -256,7 +256,7 @@ flowchart LR
 
 【案例源码】`案例与源码-3-LangGraph框架/03-state/reducers/StateReducer_Default.py`
 
-[StateReducer_Default.py](案例与源码-3-LangGraph框架/03-state/reducers/StateReducer_Default.py ":include :type=code")
+[StateReducer_Default.py](案例与源码-3-LangGraph框架/03-state/reducers/StateReducer_Default.py)
 
 ### 3.3 案例二：add_messages 追加消息列表
 
@@ -266,7 +266,7 @@ flowchart LR
 
 【案例源码】`案例与源码-3-LangGraph框架/03-state/reducers/StateReducer_AddMessages.py`
 
-[StateReducer_AddMessages.py](案例与源码-3-LangGraph框架/03-state/reducers/StateReducer_AddMessages.py ":include :type=code")
+[StateReducer_AddMessages.py](案例与源码-3-LangGraph框架/03-state/reducers/StateReducer_AddMessages.py)
 
 这个案例还有一个细节需要注意：调用 `graph.invoke(...)` 时，`messages` 里既可以传 `HumanMessage(...)` 这种对象，也可以传 `{"role": "...", "content": "..."}` 这类字典格式；如果 State 上用了 `add_messages`，运行时会尽量把它们转换成 LangChain Message 对象。因此，在节点里读正文时，通常应该用 `state["messages"][-1].content`，而不是把最后一条消息当普通字符串。
 
@@ -288,19 +288,19 @@ flowchart LR
 
 【案例源码】`案例与源码-3-LangGraph框架/03-state/reducers/StateReducer_OperatorAdd.py`
 
-[StateReducer_OperatorAdd.py](案例与源码-3-LangGraph框架/03-state/reducers/StateReducer_OperatorAdd.py ":include :type=code")
+[StateReducer_OperatorAdd.py](案例与源码-3-LangGraph框架/03-state/reducers/StateReducer_OperatorAdd.py)
 
 **字符串连接案例：**
 
 【案例源码】`案例与源码-3-LangGraph框架/03-state/reducers/StateReducer_OperatorAdd2.py`
 
-[StateReducer_OperatorAdd2.py](案例与源码-3-LangGraph框架/03-state/reducers/StateReducer_OperatorAdd2.py ":include :type=code")
+[StateReducer_OperatorAdd2.py](案例与源码-3-LangGraph框架/03-state/reducers/StateReducer_OperatorAdd2.py)
 
 **数值累加案例：**
 
 【案例源码】`案例与源码-3-LangGraph框架/03-state/reducers/StateReducer_OperatorAdd3.py`
 
-[StateReducer_OperatorAdd3.py](案例与源码-3-LangGraph框架/03-state/reducers/StateReducer_OperatorAdd3.py ":include :type=code")
+[StateReducer_OperatorAdd3.py](案例与源码-3-LangGraph框架/03-state/reducers/StateReducer_OperatorAdd3.py)
 
 ### 3.5 案例四：operator.mul 边界
 
@@ -310,7 +310,7 @@ flowchart LR
 
 【案例源码】`案例与源码-3-LangGraph框架/03-state/reducers/StateReducer_OperatorMul.py`
 
-[StateReducer_OperatorMul.py](案例与源码-3-LangGraph框架/03-state/reducers/StateReducer_OperatorMul.py ":include :type=code")
+[StateReducer_OperatorMul.py](案例与源码-3-LangGraph框架/03-state/reducers/StateReducer_OperatorMul.py)
 
 ### 3.6 案例五：自定义 Reducer
 
@@ -327,7 +327,7 @@ def my_reducer(current_value, update_value):
 
 【案例源码】`案例与源码-3-LangGraph框架/03-state/reducers/StateReducer_Custom.py`
 
-[StateReducer_Custom.py](案例与源码-3-LangGraph框架/03-state/reducers/StateReducer_Custom.py ":include :type=code")
+[StateReducer_Custom.py](案例与源码-3-LangGraph框架/03-state/reducers/StateReducer_Custom.py)
 
 ### 3.7 案例六：字段级合并策略
 
@@ -343,7 +343,7 @@ def my_reducer(current_value, update_value):
 
 【案例源码】`案例与源码-3-LangGraph框架/03-state/reducers/StateReducersMyChatBot.py`
 
-[StateReducersMyChatBot.py](案例与源码-3-LangGraph框架/03-state/reducers/StateReducersMyChatBot.py ":include :type=code")
+[StateReducersMyChatBot.py](案例与源码-3-LangGraph框架/03-state/reducers/StateReducersMyChatBot.py)
 
 ### 3.8 Reducer 选型
 

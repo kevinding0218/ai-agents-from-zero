@@ -241,7 +241,7 @@ print(f"图片已生成：{output_path}")
 
 【案例源码】`案例与源码-3-LangGraph框架/01-helloworld/LangGraphHello.py`
 
-[LangGraphHello.py](案例与源码-3-LangGraph框架/01-helloworld/LangGraphHello.py ":include :type=code")
+[LangGraphHello.py](案例与源码-3-LangGraph框架/01-helloworld/LangGraphHello.py)
 
 **下图说明**：这是把 `draw_mermaid()` 输出粘贴到 Mermaid 在线编辑器后的效果。左侧是 Mermaid 源码，右侧是渲染出来的流程图。你不需要一开始把 Mermaid 语法全背下来，只要能看懂 `__start__ → greeting → add_emoji → __end__` 这条执行路径即可。
 
@@ -260,7 +260,7 @@ print(f"图片已生成：{output_path}")
 
 【案例源码】`案例与源码-3-LangGraph框架/01-helloworld/LangGraphBiz.py`
 
-[LangGraphBiz.py](案例与源码-3-LangGraph框架/01-helloworld/LangGraphBiz.py ":include :type=code")
+[LangGraphBiz.py](案例与源码-3-LangGraph框架/01-helloworld/LangGraphBiz.py)
 
 ### 2.7 案例三：接入大模型
 
@@ -284,7 +284,7 @@ messages: Annotated[List, add_messages]
 
 【案例源码】`案例与源码-3-LangGraph框架/01-helloworld/LangGraphLLM.py`
 
-[LangGraphLLM.py](案例与源码-3-LangGraph框架/01-helloworld/LangGraphLLM.py ":include :type=code")
+[LangGraphLLM.py](案例与源码-3-LangGraph框架/01-helloworld/LangGraphLLM.py)
 
 ### 2.8 并行检索与汇总回答
 

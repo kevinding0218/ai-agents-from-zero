@@ -10,6 +10,9 @@
 - 返回值分别是“单个向量”和“向量列表”；向量维度由当前模型决定，建索引和查询时应保持模型一致。
 
 模型文档链接：https://bailian.console.aliyun.com/cn-beijing/?tab=api#/api/?type=model&url=2587654
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/09-embedding/Text2Embedding_DashScope.py
 """
 
 # pip install langchain-community dashscope

@@ -7,6 +7,9 @@
 - 本例先单独演示 Pydantic，本身不直接定义 Tool；它的作用是帮助你理解后面为什么 `args_schema` 能提升工具参数的清晰度与安全性。
 - Pydantic 基于类型注解在「实例化时」做校验与转换：合法则自动转，不合法则抛 `ValidationError`。
 - `StrictInt` 这类严格类型会拒绝自动转换，仅接受真实 `int`，适合在工具参数需要更严格约束时使用。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/08-tools/PydanticDemo.py
 """
 from pydantic import BaseModel, ValidationError, StrictInt
 

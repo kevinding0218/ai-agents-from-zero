@@ -10,6 +10,9 @@
 - 本示例只演示文本输入，目的是先看懂多模态接口的返回结构；图像输入通常需要 URL 或 base64。
 
 模型文档链接：https://bailian.console.aliyun.com/?productCode=p_efm&tab=model#/model-market/all?capabilities=ME
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/09-embedding/Text2Embedding_DashScopePro.py
 """
 
 import dashscope

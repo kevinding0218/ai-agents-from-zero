@@ -8,6 +8,9 @@
 - TextLoader 用于纯文本（.txt），需指定文件路径和编码（如 utf-8）；load() 返回 List[Document]，多行文本通常合并为一个 Document。
 - TXT 是最容易入门的加载场景，但“能加载”不等于“适合直接检索”：真实 RAG 中通常仍要继续切块，再做向量化与入库。
 - 后续可接文本分割器、嵌入模型与向量库，完成 RAG 的「加载 → 分割 → 向量化 → 存储」流程。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/10-rag/docloads/RagLoadTxtDemo.py
 """
 
 # pip install langchain_community

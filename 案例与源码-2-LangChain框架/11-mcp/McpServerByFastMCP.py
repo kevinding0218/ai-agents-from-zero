@@ -12,6 +12,9 @@
   IDE 插件这类场景；如果你后面看到仓库里的 `sse` 写法，可以把它理解为网络化演示和兼容语境。
 - 注意：直接在终端单独运行 stdio 服务时，没有 MCP 客户端接管 stdin/stdout，输入回车就可能触发
   Invalid JSON 这类报错；这不是 FastMCP 坏了，而是因为 stdio 服务本来就应该由宿主进程来启动。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/11-mcp/McpServerByFastMCP.py
 """
 
 # pip install mcp

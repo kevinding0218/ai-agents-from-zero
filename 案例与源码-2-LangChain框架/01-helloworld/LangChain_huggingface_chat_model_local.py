@@ -28,6 +28,9 @@
     print(torch.backends.mps.is_available())  # True = Mac Apple Silicon GPU 可用
     print(torch.cuda.is_available())           # True = NVIDIA GPU 可用
     # 本机结果：MPS=True, CUDA=False → 使用 Apple M 系列芯片 GPU
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/01-helloworld/LangChain_huggingface_chat_model_local.py
 """
 
 # ========== 1. 导入依赖 ==========

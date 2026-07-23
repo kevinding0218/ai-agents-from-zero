@@ -8,6 +8,9 @@
 - MessagesPlaceholder("history") 与 prompt 中的变量名一致，RunnableWithMessageHistory 会把读到的历史注入此处；input_messages_key、history_messages_key 需与 prompt 占位符对应。
 - 本案例会同时演示 user-001 与 user-002 两个 session，帮助你直观看到“同一套链逻辑，如何切换到不同历史”。
 - 生产环境可将 store 换成 Redis、数据库等，get_session_history 返回 RedisChatMessageHistory(session_id=session_id, ...) 即可实现持久化（见 6.2）。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/07-memory/Memory_RunnableWithMessageHistoryV2.py
 """
 
 from dotenv import load_dotenv

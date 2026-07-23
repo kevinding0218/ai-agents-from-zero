@@ -8,6 +8,9 @@
 - 演示 `temperature` 如何影响输出随机性，以及 `max_tokens` 与回复长度 / 成本控制的关系。
 - 也适合配合第 11 章里关于 `AIMessage`、`response.content`、`response_metadata`、`usage_metadata` 的讲解一起看。
 - 依赖 `langchain`、`langchain-openai`，运行前在 `.env` 中配置 `deepseek-api`。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/02-models_io/ModelIO_Params.py
 """
 
 # ========== 1. 导入与环境 ==========

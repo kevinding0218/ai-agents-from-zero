@@ -7,6 +7,9 @@
 - 这个案例真正要学的是“多步串行链”：前一步不是最终答案，而是后一步的原材料。
 - 当多条子链首尾相接时，前一步输出会直接流向后一步；如果前后输入输出结构不匹配，就需要插入一次映射。
 - 这里用 `lambda` 把第一条子链输出的文本包装成 `{"input": 文本}`，本质上是在做“节点之间的数据适配”。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/06-lcel/LCEL_MultiStepChainDemo.py
 """
 
 import os
@@ -48,6 +51,14 @@ parser2 = StrOutputParser()
 chain2 = prompt2 | model | parser2
 
 # 串行组合：chain1 输出文本，用 lambda 转为 {"input": content}，以匹配 chain2 需要的输入结构
+# 整个链是这样流动的：
+# {"topic": "langchain"}
+#     ↓ chain1 = prompt1 | model | parser1
+# "LangChain 是一个框架..."   ← 这个字符串就是 content
+#     ↓ lambda content: {"input": content}
+# {"input": "LangChain 是一个框架..."}
+#     ↓ chain2 = prompt2 | model | parser2
+# "LangChain is a framework..."
 full_chain = chain1 | (lambda content: {"input": content}) | chain2
 
 # 一次 invoke：先执行 chain1，再把结果作为 chain2 的 input

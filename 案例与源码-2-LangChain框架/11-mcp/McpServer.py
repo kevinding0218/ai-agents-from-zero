@@ -12,6 +12,9 @@
   让同一套能力更容易被不同宿主、不同 AI 应用复用。
 - 仓库里保留了 transport="sse" 这类写法，主要是为了和本章 mcp.json、网络化演示案例保持一致；
   如果从当前官方主线理解，初学者更应该先把 stdio 和 HTTP/Streamable HTTP 当作重点。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/11-mcp/McpServer.py
 """
 
 import json

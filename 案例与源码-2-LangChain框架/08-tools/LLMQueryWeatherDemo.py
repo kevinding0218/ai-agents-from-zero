@@ -7,6 +7,9 @@
 - `bind_tools([get_weather])` 的作用是“把工具声明给模型”，不是立即执行工具；只有模型判断需要时，后续才会返回 `tool_calls`。
 - 本例采用课程里的入门写法：`模型 -> 解析器 -> 工具 -> 输出链`，便于把“参数生成、工具执行、结果转述”三个阶段拆开看清楚。
 - 这条链路和 LangChain / OpenAI 官方常见的 `AIMessage.tool_calls -> ToolMessage` 主线并不矛盾，本质上都是“模型先发起调用意图，程序再执行工具并处理结果”。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/08-tools/LLMQueryWeatherDemo.py
 """
 
 from dotenv import load_dotenv

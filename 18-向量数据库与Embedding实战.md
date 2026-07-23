@@ -300,7 +300,7 @@ LangChain 官方则进一步强调了两个 API：
 
 【案例源码】`案例与源码-2-LangChain框架/09-embedding/Text2Embedding_DashScopeHello.py`
 
-[Text2Embedding_DashScopeHello.py](案例与源码-2-LangChain框架/09-embedding/Text2Embedding_DashScopeHello.py ":include :type=code")
+[Text2Embedding_DashScopeHello.py](案例与源码-2-LangChain框架/09-embedding/Text2Embedding_DashScopeHello.py)
 
 学习这个案例时，建议你重点观察：
 
@@ -316,7 +316,7 @@ LangChain 官方则进一步强调了两个 API：
 
 【案例源码】`案例与源码-2-LangChain框架/09-embedding/Text2Embedding_OpenAiHello.py`
 
-[Text2Embedding_OpenAiHello.py](案例与源码-2-LangChain框架/09-embedding/Text2Embedding_OpenAiHello.py ":include :type=code")
+[Text2Embedding_OpenAiHello.py](案例与源码-2-LangChain框架/09-embedding/Text2Embedding_OpenAiHello.py)
 
 ### 4.5 案例：用 LangChain 的统一接口做单条与批量向量化
 
@@ -331,7 +331,7 @@ LangChain 官方则进一步强调了两个 API：
 
 【案例源码】`案例与源码-2-LangChain框架/09-embedding/Text2Embedding_DashScope.py`
 
-[Text2Embedding_DashScope.py](案例与源码-2-LangChain框架/09-embedding/Text2Embedding_DashScope.py ":include :type=code")
+[Text2Embedding_DashScope.py](案例与源码-2-LangChain框架/09-embedding/Text2Embedding_DashScope.py)
 
 运行时你可以特别留意：单条返回的是一个向量；批量返回的是“向量列表”；len(向量)对应维度。
 
@@ -346,7 +346,7 @@ LangChain 官方则进一步强调了两个 API：
 
 【案例源码】`案例与源码-2-LangChain框架/09-embedding/Text2Embedding_DashScopePro.py`
 
-[Text2Embedding_DashScopePro.py](案例与源码-2-LangChain框架/09-embedding/Text2Embedding_DashScopePro.py ":include :type=code")
+[Text2Embedding_DashScopePro.py](案例与源码-2-LangChain框架/09-embedding/Text2Embedding_DashScopePro.py)
 
 ---
 
@@ -425,7 +425,7 @@ OpenAI 官方文档里也明确提到：在很多 Embedding 场景里，**余弦
 
 【案例源码】`案例与源码-2-LangChain框架/09-embedding/Text2Embedding_CosSimilarity.py`
 
-[Text2Embedding_CosSimilarity.py](案例与源码-2-LangChain框架/09-embedding/Text2Embedding_CosSimilarity.py ":include :type=code")
+[Text2Embedding_CosSimilarity.py](案例与源码-2-LangChain框架/09-embedding/Text2Embedding_CosSimilarity.py)
 
 学习这个案例时，建议重点抓住两件事：
 
@@ -477,7 +477,7 @@ OpenAI 官方文档里也明确提到：在很多 Embedding 场景里，**余弦
 
 【案例源码】`案例与源码-2-LangChain框架/09-embedding/EmbeddingStoreRedis.py`
 
-[EmbeddingStoreRedis.py](案例与源码-2-LangChain框架/09-embedding/EmbeddingStoreRedis.py ":include :type=code")
+[EmbeddingStoreRedis.py](案例与源码-2-LangChain框架/09-embedding/EmbeddingStoreRedis.py)
 
 运行后，你可以在 RedisInsight 里看到类似下图的结构：
 
@@ -503,7 +503,7 @@ OpenAI 官方文档里也明确提到：在很多 Embedding 场景里，**余弦
 
 【案例源码】`案例与源码-2-LangChain框架/10-rag/RedisVectorStore.py`
 
-[RedisVectorStore.py](案例与源码-2-LangChain框架/10-rag/RedisVectorStore.py ":include :type=code")
+[RedisVectorStore.py](案例与源码-2-LangChain框架/10-rag/RedisVectorStore.py)
 
 这个案例有几个学习重点：
 
@@ -530,7 +530,7 @@ OpenAI 官方文档里也明确提到：在很多 Embedding 场景里，**余弦
 
 【案例源码】`案例与源码-2-LangChain框架/10-rag/RedisVectorStore_SimilaritySearch.py`
 
-[RedisVectorStore_SimilaritySearch.py](案例与源码-2-LangChain框架/10-rag/RedisVectorStore_SimilaritySearch.py ":include :type=code")
+[RedisVectorStore_SimilaritySearch.py](案例与源码-2-LangChain框架/10-rag/RedisVectorStore_SimilaritySearch.py)
 
 这里需要先区分 `score` 的含义：
 

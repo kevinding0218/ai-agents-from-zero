@@ -7,6 +7,9 @@
 - `RunnableLambda` 的作用，是把普通 Python 函数变成 Runnable 节点，方便插入到 LCEL 链中。
 - 它特别适合做轻量逻辑，例如打印中间结果、字段映射、输入输出结构适配；如果逻辑已经很重，就不建议继续塞在函数链里。
 - 除了显式写 `RunnableLambda(函数)`，也可以直接把函数放在 `|` 之间，LangChain 会自动完成包装。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/06-lcel/LCEL_RunnableLambdaDemo.py
 """
 
 import os

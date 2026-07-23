@@ -8,6 +8,9 @@
 - 使用 `ChatDeepSeek` 时通常无需手动写 `base_url`，因为 provider 类内部已经封装了官方地址与接法。
 - 原生 provider 的优点是更贴近厂商自身表达；兼容接口的优点是更统一，适合多模型共用一套风格。
 - 依赖 `langchain-deepseek`，运行前在 `.env` 中配置 `deepseek-api`。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/02-models_io/ModelIO_DeepSeek.py
 """
 
 # ========== 1. 导入与环境 ==========

@@ -10,6 +10,9 @@
 - 代码里把 score 换算成 1 - score，主要是为了更符合初学者直觉；真实项目里应以具体向量库和距离度量定义为准。
 - 运行前需确保 Redis 中已有数据，例如先执行同目录下的 RedisVectorStore.py；`index_name`、`redis_url` 也必须保持一致。
 - 在完整 RAG 里，这一步通常不会直接把结果打印完就结束，而是会把查到的 `Document` 进一步组织进 Prompt，再交给 LLM 生成答案。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/10-rag/RedisVectorStore_SimilaritySearch.py
 """
 
 from langchain_redis import RedisConfig, RedisVectorStore

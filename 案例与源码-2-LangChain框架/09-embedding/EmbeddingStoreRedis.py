@@ -9,6 +9,9 @@
 - as_retriever() 得到的是检索器；invoke(查询文本) 时，LangChain 会先把查询文本转成向量，再去库里找最相关的 Document。
 - 这个案例是 RAG 的底层能力演示，不包含文档加载器、文本分割器和“检索后交给大模型生成答案”的完整流程。
 - redis_url 和 index_name 要与本地环境一致；如果要复用已有索引，查询端也必须使用同一个 index_name。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/09-embedding/EmbeddingStoreRedis.py
 """
 
 # pip install langchain-community dashscope redis redisvl

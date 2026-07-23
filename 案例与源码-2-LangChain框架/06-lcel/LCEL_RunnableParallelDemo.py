@@ -7,6 +7,9 @@
 - `RunnableParallel` 解决的是“同一输入，要同时跑多条子链”的问题。
 - 结果会以 `dict` 形式汇总返回，键名对应并行结构里的键，值对应每条子链的输出。
 - 除了显式写 `RunnableParallel({...})`，LCEL 里也常直接用字典表达并行结构；并行完成后，还可以继续把这个字典交给后续链做总结或比较。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/06-lcel/LCEL_RunnableParallelDemo.py
 """
 
 import os

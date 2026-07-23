@@ -163,7 +163,7 @@ graph.add_edge("node_a", END)
 
 【案例源码】`案例与源码-3-LangGraph框架/04-node/DefNode.py`
 
-[DefNode.py](案例与源码-3-LangGraph框架/04-node/DefNode.py ":include :type=code")
+[DefNode.py](案例与源码-3-LangGraph框架/04-node/DefNode.py)
 
 这个案例用来建立一个基础直觉：**Node 的重点不是“函数怎么写花哨”，而是“如何被图注册、调度、配置”。**
 
@@ -206,7 +206,7 @@ LangGraph 要真正命中缓存，通常要看三层：
 
 【案例源码】`案例与源码-3-LangGraph框架/04-node/Node_Cache.py`
 
-[Node_Cache.py](案例与源码-3-LangGraph框架/04-node/Node_Cache.py ":include :type=code")
+[Node_Cache.py](案例与源码-3-LangGraph框架/04-node/Node_Cache.py)
 
 ### 1.9 错误处理与重试机制
 
@@ -243,7 +243,7 @@ LangGraph 用 `RetryPolicy` 来描述这件事。官方参考文档里，`RetryP
 
 【案例源码】`案例与源码-3-LangGraph框架/04-node/Node_ExpErrRetry.py`
 
-[Node_ExpErrRetry.py](案例与源码-3-LangGraph框架/04-node/Node_ExpErrRetry.py ":include :type=code")
+[Node_ExpErrRetry.py](案例与源码-3-LangGraph框架/04-node/Node_ExpErrRetry.py)
 
 学完 Node 这一节后，你至少应该建立这个认识：**节点不只是“一个函数”，它还是图里的一个可配置执行单元，可以挂缓存、挂重试策略，也可以明确入口和出口。**
 
@@ -328,7 +328,7 @@ builder.add_edge("node_a", "node_b")
 
 【案例源码】`案例与源码-3-LangGraph框架/05-edge/Edge_Normal.py`
 
-[Edge_Normal.py](案例与源码-3-LangGraph框架/05-edge/Edge_Normal.py ":include :type=code")
+[Edge_Normal.py](案例与源码-3-LangGraph框架/05-edge/Edge_Normal.py)
 
 ### 2.5 条件边（Conditional Edges）
 
@@ -373,9 +373,9 @@ flowchart LR
 
 【案例源码】`案例与源码-3-LangGraph框架/05-edge/Edge_Conditional.py`、`Edge_ConditionalV2.py`
 
-[Edge_Conditional.py](案例与源码-3-LangGraph框架/05-edge/Edge_Conditional.py ":include :type=code")
+[Edge_Conditional.py](案例与源码-3-LangGraph框架/05-edge/Edge_Conditional.py)
 
-[Edge_ConditionalV2.py](案例与源码-3-LangGraph框架/05-edge/Edge_ConditionalV2.py ":include :type=code")
+[Edge_ConditionalV2.py](案例与源码-3-LangGraph框架/05-edge/Edge_ConditionalV2.py)
 
 ### 2.7 入口点与条件入口点
 
@@ -406,9 +406,9 @@ flowchart LR
 
 【案例源码】`案例与源码-3-LangGraph框架/05-edge/Edge_EntryPoint.py`、`Edge_ConditionalEntryPoint.py`
 
-[Edge_EntryPoint.py](案例与源码-3-LangGraph框架/05-edge/Edge_EntryPoint.py ":include :type=code")
+[Edge_EntryPoint.py](案例与源码-3-LangGraph框架/05-edge/Edge_EntryPoint.py)
 
-[Edge_ConditionalEntryPoint.py](案例与源码-3-LangGraph框架/05-edge/Edge_ConditionalEntryPoint.py ":include :type=code")
+[Edge_ConditionalEntryPoint.py](案例与源码-3-LangGraph框架/05-edge/Edge_ConditionalEntryPoint.py)
 
 ### 2.9 条件边还能构成循环结构
 
@@ -523,7 +523,7 @@ flowchart LR
 
 【案例源码】`案例与源码-3-LangGraph框架/06-specialApi/SendDemo.py`
 
-[SendDemo.py](案例与源码-3-LangGraph框架/06-specialApi/SendDemo.py ":include :type=code")
+[SendDemo.py](案例与源码-3-LangGraph框架/06-specialApi/SendDemo.py)
 
 从项目角度看，Send 很适合这些场景：
 
@@ -574,7 +574,7 @@ flowchart LR
 
 【案例源码】`案例与源码-3-LangGraph框架/06-specialApi/CommandDemo.py`
 
-[CommandDemo.py](案例与源码-3-LangGraph框架/06-specialApi/CommandDemo.py ":include :type=code")
+[CommandDemo.py](案例与源码-3-LangGraph框架/06-specialApi/CommandDemo.py)
 
 在真实项目里，Command 很适合：
 
@@ -635,7 +635,7 @@ Runtime 的价值就是把“配置”和“状态”拆开。拆开之后，Sta
 
 【案例源码】`案例与源码-3-LangGraph框架/06-specialApi/RuntimeContextDemo.py`
 
-[RuntimeContextDemo.py](案例与源码-3-LangGraph框架/06-specialApi/RuntimeContextDemo.py ":include :type=code")
+[RuntimeContextDemo.py](案例与源码-3-LangGraph框架/06-specialApi/RuntimeContextDemo.py)
 
 ### 3.9 图执行时，外部能看到什么
 

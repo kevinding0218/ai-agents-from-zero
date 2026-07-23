@@ -7,6 +7,9 @@
 - 这是最经典的 LCEL 入门案例：`prompt | model | parser`。
 - 这里要区分两个概念：LCEL 是“把多个 Runnable 连起来的写法”，而真正得到的可执行对象是 Chain；这个 Chain 的具体类型通常就是 `RunnableSequence`。
 - prompt、model、parser 都实现了 Runnable 接口，所以既可以分步 `invoke()`，也可以先用 `|` 组合后再整体 `invoke()`。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/06-lcel/LCEL_RunnableSequenceDemo.py
 """
 
 import os

@@ -7,6 +7,9 @@
 - 若只用「Prompt + Model + Parser」且不保存历史，每次 invoke 相互独立，模型看不到上一轮对话。
 - 本案例先问「我叫张三，你叫什么?」，再问「你知道我是谁吗?」——第二问时模型会回答「我不知道」，因为程序没有把第一轮内容注入到第二轮。
 - 对比：网页版聊天能记住多轮内容，是因为前端或后端实现了历史记忆（读历史 → 拼入提示 → 写回历史）；本章后续案例用 RunnableWithMessageHistory + 记忆组件实现该能力。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/07-memory/Memory_IDontKnow.py
 """
 
 from dotenv import load_dotenv

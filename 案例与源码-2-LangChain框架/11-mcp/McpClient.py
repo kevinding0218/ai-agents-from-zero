@@ -12,6 +12,9 @@
 - 实际生产里，客户端通常会通过 stdio 或 HTTP/Streamable HTTP 连接独立的 MCP 服务；本仓库也保留了
   `sse` 写法作为兼容和教学示例。
 - 运行方式：直接运行本文件即可。它会自动导入 McpServer.py 中的 mcp 对象，无需先单独启动服务端进程。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/11-mcp/McpClient.py
 """
 
 import json

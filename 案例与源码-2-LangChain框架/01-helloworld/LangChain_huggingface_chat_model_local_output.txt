@@ -1,0 +1,25 @@
+写法A 使用设备：CPU（MPS 不支持此写法）
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 6565.74it/s]
+模型已就绪，输入问题开始对话（输入 quit 或 exit 退出）
+--------------------------------------------------
+你：[transformers] Both `max_new_tokens` (=256) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer GPT2Tokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+模型回复正文：<|im_start|>system
+You are a helpful AI assistant named SmolLM, trained by Hugging Face<|im_end|>
+<|im_start|>user
+什么是机器学习？<|im_end|>
+<|im_start|>assistant
+机器学习是一种精选项，可以帮助用于处理数据、关注思考、进一步、管理数据、搜索数据等需求的方案。这些超级精品的高效功能都在机器学习中提供。
+
+机器学习有两个很重要的部分：
+
+一、定期学习：关注定时间的思考、创建总结、计算性能素质、推理性能素质等。即使在什么时候学习，也可能需要换种学习方式。
+
+二、选择学习：学�
+厂商返回的原始元数据：{}
+LangChain 统一整理后的用量信息：None
+工具调用信息：[]
+厂商扩展字段：{}
+[token 消耗] 输入: 16  输出: 302  合计: 318（本地统计，不计费）
+--------------------------------------------------
+你：再见！

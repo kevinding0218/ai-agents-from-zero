@@ -8,6 +8,9 @@
 - 工具 docstring 要尽量写清调用场景和关键参数规则；像 `loc` 需要英文城市名这种约束，最好直接写在工具说明里，而不是留给模型猜。
 - 返回值这里使用 JSON 字符串，是为了方便后续链路继续处理；真实项目里也可以返回更稳定的结构化对象，但要注意和后续消费方式保持一致。
 - 本例聚焦 Tool 封装本身，未展开重试、降级、异常兜底等工程细节；这些通常会在真实项目的 service / client 层补齐。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/08-tools/QueryWeatherTool.py
 """
 
 from langchain_core.tools import tool

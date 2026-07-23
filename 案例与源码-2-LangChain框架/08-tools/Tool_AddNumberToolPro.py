@@ -7,6 +7,9 @@
 - `args_schema` 的价值，不只是“参数能校验”，更重要的是把工具参数的语义说明显式暴露给模型，提升参数生成正确率。
 - `tool.args` 主要反映参数 schema；而工具的整体用途说明，仍然应该优先写在函数 docstring 中，不建议完全依赖参数模型的类注释。
 - `return_direct` 等参数更偏 Agent 场景；本例的重点放在“如何让工具定义更像一份清晰的小接口文档”。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/08-tools/Tool_AddNumberToolPro.py
 """
 from langchain_core.tools import tool
 from loguru import logger

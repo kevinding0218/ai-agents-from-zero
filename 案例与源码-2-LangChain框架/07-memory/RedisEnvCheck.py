@@ -7,6 +7,9 @@
 - 使用 RedisChatMessageHistory 前，至少要先确认两件事：Python 能否导入 redis 包、当前 REDIS_URL 指向的 Redis 服务是否真的可达。
 - 默认按原生 Redis 地址 redis://localhost:6379 检查；如果你用的是 Redis Stack 的 Docker 映射端口（如 -p 26379:6379），可先设置环境变量 REDIS_URL=redis://localhost:26379。
 - 这个脚本不依赖 LangChain，本质上是在排查“Python 依赖”和“Redis 服务”这两个基础环境问题。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/07-memory/RedisEnvCheck.py
 """
 
 import os

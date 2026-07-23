@@ -539,7 +539,7 @@ asyncio.run(main())
 
 【案例源码】`案例与源码-2-LangChain框架/11-mcp/McpServer.py`
 
-[McpServer.py](案例与源码-2-LangChain框架/11-mcp/McpServer.py ":include :type=code")
+[McpServer.py](案例与源码-2-LangChain框架/11-mcp/McpServer.py)
 
 这个文件最重要的价值，不是“严格协议完整实现”，而是**帮助你先看懂 MCP 服务端到底在干什么**。
 
@@ -562,7 +562,7 @@ asyncio.run(main())
 
 【案例源码】`案例与源码-2-LangChain框架/11-mcp/McpServerByFastMCP.py`
 
-[McpServerByFastMCP.py](案例与源码-2-LangChain框架/11-mcp/McpServerByFastMCP.py ":include :type=code")
+[McpServerByFastMCP.py](案例与源码-2-LangChain框架/11-mcp/McpServerByFastMCP.py)
 
 这个文件更接近“官方 Python SDK / FastMCP 的正常使用方式”，它同时演示了：
 
@@ -579,7 +579,7 @@ asyncio.run(main())
 
 【案例源码】`案例与源码-2-LangChain框架/11-mcp/McpServerWeatherByFastMCP.py`
 
-[McpServerWeatherByFastMCP.py](案例与源码-2-LangChain框架/11-mcp/McpServerWeatherByFastMCP.py ":include :type=code")
+[McpServerWeatherByFastMCP.py](案例与源码-2-LangChain框架/11-mcp/McpServerWeatherByFastMCP.py)
 
 这个文件主要展示两件事：
 
@@ -592,7 +592,7 @@ asyncio.run(main())
 
 【配置文件】`案例与源码-2-LangChain框架/11-mcp/mcp.json`
 
-[mcp.json](案例与源码-2-LangChain框架/11-mcp/mcp.json ":include :type=code")
+[mcp.json](案例与源码-2-LangChain框架/11-mcp/mcp.json)
 
 这一节我特别想帮你纠正一个常见误区：
 
@@ -628,7 +628,7 @@ asyncio.run(main())
 
 【案例源码】`案例与源码-2-LangChain框架/11-mcp/McpClient.py`
 
-[McpClient.py](案例与源码-2-LangChain框架/11-mcp/McpClient.py ":include :type=code")
+[McpClient.py](案例与源码-2-LangChain框架/11-mcp/McpClient.py)
 
 这个文件容易让人误会，这里需要讲清楚：它的重点是演示：
 
@@ -648,7 +648,7 @@ asyncio.run(main())
 
 【案例源码】`案例与源码-2-LangChain框架/11-mcp/McpClientAgent.py`
 
-[McpClientAgent.py](案例与源码-2-LangChain框架/11-mcp/McpClientAgent.py ":include :type=code")
+[McpClientAgent.py](案例与源码-2-LangChain框架/11-mcp/McpClientAgent.py)
 
 这个案例更贴近真实项目，因为它做了下面这条完整链路：
 

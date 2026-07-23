@@ -8,6 +8,9 @@
 - 和 `RecursiveTextSplitter.py` 相比，这个脚本的重点不是“如何切分”，而是“如何验证 chunk_overlap 带来的重叠并没有造成内容丢失”。
 - chunk_overlap 会使相邻块有重复片段；若按「剔除重叠长度」再拼接，可验证是否覆盖原文且无丢失（本示例用固定 30 字符剔除演示）。
 - 入门时以 RecursiveTextSplitter.py 的 split_text + create_documents 为主即可；本脚本侧重理解重叠与完整性。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/10-rag/textsplit/RecursiveTextSplitterV2.py
 """
 
 from langchain_text_splitters import RecursiveCharacterTextSplitter

@@ -8,6 +8,9 @@
 - InMemoryChatMessageHistory 把消息存在进程内存中，重启即丢失，适合单进程、无需持久化的场景。
 - config 中 configurable={"session_id": "xxx"} 是 RunnableWithMessageHistory 的标准调用方式；本示例为了先讲清“最小可运行版本”，始终返回同一个 history，因此这里只演示单会话连续对话。
 - 真正按 session_id 维护多份历史的写法见 Memory_RunnableWithMessageHistoryV2.py。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/07-memory/Memory_RunnableWithMessageHistory.py
 """
 
 from dotenv import load_dotenv

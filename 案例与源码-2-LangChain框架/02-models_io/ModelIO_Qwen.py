@@ -8,6 +8,9 @@
 - `ChatTongyi` 更贴近阿里云原生接法，不需要手动写 `base_url`；如果你更强调多模型统一风格，通常会优先学兼容接口写法。
 - 这个案例同时演示了 `invoke()` 和 `stream()`，方便和第 10 章的流式输出、以及第 13 章的消息体系衔接起来看。
 - 依赖 `langchain-community`、`dashscope`；若 `cffi` 报错可尝试 `pip install --upgrade --force-reinstall cffi`。运行前配置 `aliQwen-api`。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/02-models_io/ModelIO_Qwen.py
 """
 
 # ========== 1. 导入与环境 ==========

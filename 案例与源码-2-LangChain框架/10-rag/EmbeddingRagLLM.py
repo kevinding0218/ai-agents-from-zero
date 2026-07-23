@@ -10,6 +10,9 @@
 - `RunnablePassthrough()` 表示「把输入原样传给下一环节」；这里把用户问题同时传给 retriever（作为查询）和 prompt（作为 `{question}`）。
 - 本例刻意保留了“有 RAG / 无 RAG”的对比，便于直观看到：RAG 的价值不只是“能回答”，而是“回答时是否真的用到了外挂知识库”。
 - 运行前需启动 Redis、配置 aliQwen-api，且 alibaba-java.docx 在可访问路径（如本脚本同目录）。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/10-rag/EmbeddingRagLLM.py
 """
 
 # pip install unstructured docx2txt python-docx

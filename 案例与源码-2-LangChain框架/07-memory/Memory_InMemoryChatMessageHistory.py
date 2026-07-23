@@ -8,6 +8,9 @@
 - 手动维护 history 时，要自己决定“什么时候把用户消息写进去、什么时候把 AI 回复写回去”；如果漏掉 add_message(ai_message)，下一轮模型就看不到自己的上一轮回答。
 - 适用场景：需要细粒度控制「何时写入历史、何时读取」时，可直接操作 history；多数场景更推荐用 RunnableWithMessageHistory 自动完成「读→拼入→执行→写回」。
 - 内存版：数据仅在进程内，重启即丢失；持久化见 6.2 RedisChatMessageHistory。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/07-memory/Memory_InMemoryChatMessageHistory.py
 """
 
 from dotenv import load_dotenv

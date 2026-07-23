@@ -12,6 +12,9 @@
 - 本脚本虽然放在“阿里百炼 HelloWorld”这一节里，但当前演示模型使用的是部署在阿里百炼兼容端点上的 `deepseek-v3.2`。
 - 重点不在“必须调用哪一个模型”，而在“看懂 0.x/经典写法如何通过 OpenAI 兼容接口完成第一次调用”。
 - 运行前请在项目根目录准备 `.env`；本仓库里 `QWEN_API_KEY` / `aliQwen-api` 都可能指向阿里百炼 Key，这是历史兼容写法。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/01-helloworld/LangChainV0.3.py
 """
 
 from langchain_openai import (

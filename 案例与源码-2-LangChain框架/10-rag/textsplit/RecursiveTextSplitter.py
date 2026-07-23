@@ -9,6 +9,9 @@
 - chunk_size：单块最大长度（按 length_function 计算，默认 len 即字符数）；chunk_overlap：相邻块重叠字符数，常用 size 的 10%～20%。
 - split_text(content)：把字符串切成字符串列表；create_documents(texts)：把字符串列表转成 Document 列表（或直接用 split_documents 处理 Document）。
 - 重叠部分会重复出现在相邻块中，总字符数会大于原文，这不是 bug，而是为了减少「半句话被截断」的问题。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/10-rag/textsplit/RecursiveTextSplitter.py
 """
 
 from langchain_text_splitters import RecursiveCharacterTextSplitter

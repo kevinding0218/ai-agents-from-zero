@@ -11,6 +11,9 @@
 补充说明：
 - 运行本脚本前，建议已经完成本章前面的单模型 HelloWorld，否则更容易被“多变量、多平台”搞乱。
 - 如果你使用的是 `model_provider="deepseek"` 这种官方 provider 写法，请确保已经安装 `langchain-deepseek`。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/01-helloworld/LangChain_MoreV1.0.py
 """
 
 # ========== 1. 导入依赖与环境 ==========

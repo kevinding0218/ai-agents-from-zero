@@ -8,6 +8,9 @@
 - 对真实项目来说，这种写法很常见，因为保留同一套调用方式后，切换厂商时通常只需要调整 base_url、api_key、model。
 - client.embeddings.create() 的 input 可以是单字符串或字符串列表；返回结果中的 data[i].embedding 就是向量。
 - 若平台存在不同地域或不同网关，base_url 与对应 API Key 需要保持匹配。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/09-embedding/Text2Embedding_OpenAiHello.py
 """
 
 import os

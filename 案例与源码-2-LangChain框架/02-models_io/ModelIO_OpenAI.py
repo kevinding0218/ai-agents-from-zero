@@ -8,6 +8,9 @@
 - 适合「仅需简单 API 调用」、暂时不打算接 Prompt、Parser、LCEL、Agent 等 LangChain 组件的场景。
 - 返回结果是 OpenAI SDK 的原生响应结构，不是 LangChain 的 `AIMessage`；读取正文需要走 `response.choices[0].message.content`。
 - 依赖 `openai` 包，运行前在 `.env` 中配置对应平台的 API Key（如 `deepseek-api`）。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/02-models_io/ModelIO_OpenAI.py
 """
 
 # ========== 1. 导入与环境 ==========

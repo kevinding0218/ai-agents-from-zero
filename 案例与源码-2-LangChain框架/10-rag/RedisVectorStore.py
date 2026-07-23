@@ -9,6 +9,9 @@
 - 这条路线和 `from_documents(...)` 并不冲突：前者更适合你手里已经是纯文本列表，后者更适合你已经有 `Document` 列表。
 - 本例里额外手动执行了一次 `embed_documents`，目的是先观察“向量长什么样、维度是多少”；真正做存储时，这一步不是必须的。
 - 返回的 ids 可用于后续更新、删除或追踪；index_name 需要和后续检索端保持一致。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/10-rag/RedisVectorStore.py
 """
 
 from langchain_redis import RedisConfig, RedisVectorStore

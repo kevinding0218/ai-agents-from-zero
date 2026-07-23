@@ -9,6 +9,9 @@
 - 这类写法最贴近真实 RAG 项目，因为它既保留了 loader 产出的 metadata，又完成了后续向量化之前最关键的切块步骤。
 - 本示例用 UnstructuredLoader 加载 rag.txt，再用 RecursiveCharacterTextSplitter 切分；需 pip install python-magic-bin（部分环境）。
 - 为何用 split_documents 而不是 split_text？split_text(字符串) 入参是「一段文本」，返回字符串列表；这里入参是 Document 列表（来自 loader.load()），需要得到「带 metadata 的 Document 列表」供后续向量化/检索，只能用 split_documents。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/10-rag/textsplit/RecursiveDocumentSplitter.py
 """
 
 # pip install langchain-unstructured（部分环境加载本地文件还需 python-magic-bin）

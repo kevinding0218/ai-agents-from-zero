@@ -10,6 +10,9 @@
 
 二、本案例做法：用 Pydantic 模型 Person 定义「时间、人物、事件」结构 → 用 JsonOutputParser(pydantic_object=Person) 创建解析器 → 用 parser.get_format_instructions() 得到说明 → 把说明拼进 human 消息，再调用模型与解析器。
   - 模型会按 Person 的 schema 生成 JSON；当前 JsonOutputParser 解析结果为 dict（若要 Pydantic 实例与完整校验，见 PydanticOutputParser / StructuredOutput_Pydantic.py）。
+
+How to run?
+$ python3 案例与源码-2-LangChain框架/05_parser/JsonOutputParser_GetFormatInstructions.py
 """
 
 from langchain_core.output_parsers import JsonOutputParser
